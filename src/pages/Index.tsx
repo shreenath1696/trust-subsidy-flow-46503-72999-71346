@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, Wallet, Store, ArrowRight, Sparkles } from "lucide-react";
+import { Shield, Wallet, Store, ArrowRight, Sparkles, LogIn } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -11,6 +11,15 @@ const Index = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background"></div>
       
       <div className="container mx-auto px-4 py-16 relative z-10">
+        <div className="flex justify-end mb-4 animate-fade-in">
+          <Link to="/auth">
+            <Button variant="outline" className="gap-2">
+              <LogIn className="h-4 w-4" />
+              Sign In
+            </Button>
+          </Link>
+        </div>
+        
         <div className="max-w-4xl mx-auto text-center mb-16 space-y-6 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-sm font-medium text-primary mb-4 border border-primary/20 backdrop-blur-sm">
             <Sparkles className="h-4 w-4 animate-pulse" />

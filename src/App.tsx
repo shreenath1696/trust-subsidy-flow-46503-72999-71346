@@ -8,6 +8,7 @@ import Government from "./pages/Government";
 import Citizen from "./pages/Citizen";
 import Vendor from "./pages/Vendor";
 import NotFound from "./pages/NotFound";
+import Auth from "./pages/Auth";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="/government" element={<Government />} />
           <Route path="/citizen" element={<Citizen />} />
           <Route path="/vendor" element={<Vendor />} />
